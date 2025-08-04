@@ -1,0 +1,27 @@
+// 颜色变量
+$primary-color: #667eea;
+$secondary-color: #764ba2;
+$text-color: #333;
+$white: #fff;
+
+// 字体变量
+$font-family-base: 'Arial', sans-serif;
+$font-size-base: 16px;
+$font-size-large: 1.2rem;
+$font-size-xl: 3rem;
+
+// 间距变量
+$spacing-xs: 0.5rem;
+$spacing-sm: 1rem;
+$spacing-md: 1.5rem;
+$spacing-lg: 2rem;
+
+// 阴影变量
+$text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+$box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+
+// 断点变量
+$breakpoint-sm: 576px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 992px;
+$breakpoint-xl: 1200px; 

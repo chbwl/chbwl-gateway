@@ -1,0 +1,42 @@
+// 导入变量
+@import './variables.scss';
+
+// 弹性布局混合器
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+// 渐变背景混合器
+@mixin gradient-bg($start-color: $primary-color, $end-color: $secondary-color) {
+  background: linear-gradient(135deg, $start-color 0%, $end-color 100%);
+}
+
+// 响应式混合器
+@mixin responsive($breakpoint) {
+  @if $breakpoint == sm {
+    @media (max-width: $breakpoint-sm) { @content; }
+  } @else if $breakpoint == md {
+    @media (max-width: $breakpoint-md) { @content; }
+  } @else if $breakpoint == lg {
+    @media (max-width: $breakpoint-lg) { @content; }
+  } @else if $breakpoint == xl {
+    @media (max-width: $breakpoint-xl) { @content; }
+  }
+}
+
+// 文本阴影混合器
+@mixin text-shadow($shadow: $text-shadow) {
+  text-shadow: $shadow;
+}
+
+// 过渡效果混合器
+@mixin transition($property: all, $duration: 0.3s, $timing: ease) {
+  transition: $property $duration $timing;
+} 
