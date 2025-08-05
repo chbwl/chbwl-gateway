@@ -10,7 +10,9 @@
     "clean": "rm -rf node_modules dist",
     "reinstall": "pnpm clean && pnpm install",
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore",
+    "lint:check": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --ignore-path .gitignore",
     "format": "prettier --write src/",
+    "format:check": "prettier --check src/",
     "type-check": "vue-tsc --noEmit",
     "restart": "rm -f src/components.d.ts src/auto-imports.d.ts && pnpm dev"
   },
