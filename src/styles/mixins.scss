@@ -1,5 +1,5 @@
 // 导入变量
-@import './variables.scss';
+@use './variables.scss' as *;
 
 // 弹性布局混合器
 @mixin flex-center {

@@ -13,15 +13,13 @@
 </template>
 
 <script setup lang="ts">
-import { useCounterStore } from '../stores'
+import { useCounterStore } from '../stores/counter'
 
 // 使用 Pinia store
 const counter = useCounterStore()
 </script>
 
 <style lang="scss" scoped>
-// 全局变量和混合器已在 style.scss 中导入，这里可以直接使用
-
 .home {
   @include flex-column;
   @include flex-center;

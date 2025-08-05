@@ -1,6 +1,6 @@
-// 导入全局 SCSS 变量和混合器
-@import './styles/variables.scss';
-@import './styles/mixins.scss';
+// 导入变量和混合器
+@use './styles/variables.scss' as *;
+@use './styles/mixins.scss' as *;
 
 // 全局重置样式
 * {

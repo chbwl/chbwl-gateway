@@ -1,0 +1,7 @@
+// 全局变量和混合器
+@use './variables.scss' as *;
+@use './mixins.scss' as *;
+
+// 导出所有变量和混合器到全局作用域
+@forward './variables.scss';
+@forward './mixins.scss'; 

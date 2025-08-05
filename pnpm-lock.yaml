@@ -13,7 +13,7 @@ specifiers:
   lodash: ^4.17.21
   pinia: ^2.1.7
   prettier: ^3.0.0
-  sass: ^1.69.0
+  sass: ^1.89.2
   typescript: ^5.2.0
   vite: ^5.0.0
   vue: ^3.4.0
