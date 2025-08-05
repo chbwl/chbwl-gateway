@@ -8,7 +8,9 @@
           <router-link to="/about" class="nav-link">关于</router-link>
         </nav>
         <div class="header-actions">
-          <el-button @click="toggleTheme" :icon="themeIcon" circle />
+          <el-button @click="toggleTheme" circle>
+            <component :is="themeIcon" />
+          </el-button>
         </div>
       </div>
     </header>
@@ -26,11 +28,12 @@
 <script setup lang="ts">
 import { computed } from 'vue'
 import { useThemeStore } from '@/stores/theme'
+import { Moon, Sunny } from '@element-plus/icons-vue'
 
 const themeStore = useThemeStore()
 
 const themeIcon = computed(() => {
-  return themeStore.currentMode === 'dark' ? 'Moon' : 'Sunny'
+  return themeStore.currentMode === 'dark' ? Moon : Sunny
 })
 
 const toggleTheme = () => {

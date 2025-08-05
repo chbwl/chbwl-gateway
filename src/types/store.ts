@@ -1,3 +1,6 @@
+import type { UserInfo } from './api'
+import type { AppRouteRecordRaw, TabItem } from './router'
+
 // Store 基础状态类型
 export interface BaseState {
   loading?: boolean

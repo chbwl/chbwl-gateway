@@ -47,7 +47,8 @@ export const useThemeStore = defineStore('theme', {
     toggleMode() {
       const modes: ThemeMode[] = ['light', 'dark', 'auto']
       const currentIndex = modes.indexOf(this.mode)
-      this.mode = modes[(currentIndex + 1) % modes.length]
+      const nextIndex = (currentIndex + 1) % modes.length
+      this.mode = modes[nextIndex]!
       this.applyTheme()
     },
     

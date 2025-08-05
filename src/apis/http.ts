@@ -1,5 +1,10 @@
-import axios, { type AxiosInstance, type AxiosRequestConfig, type AxiosResponse } from 'axios'
+import axios, { type AxiosInstance, type InternalAxiosRequestConfig, type AxiosResponse, type AxiosRequestConfig } from 'axios'
 import { ElMessage } from 'element-plus'
+
+// 扩展AxiosRequestConfig类型
+export interface CustomAxiosRequestConfig extends InternalAxiosRequestConfig {
+  showLoading?: boolean
+}
 
 // 创建axios实例
 const http: AxiosInstance = axios.create({
@@ -12,7 +17,7 @@ const http: AxiosInstance = axios.create({
 
 // 请求拦截器
 http.interceptors.request.use(
-  (config: AxiosRequestConfig) => {
+  (config: CustomAxiosRequestConfig) => {
     // 添加token
     const token = localStorage.getItem('token')
     if (token && config.headers) {
@@ -83,7 +88,7 @@ http.interceptors.response.use(
       message = error.message || '请求配置错误'
     }
     
-    ElMessage.error(message)
+    ElMessage.error(message as any)
     return Promise.reject(error)
   }
 )

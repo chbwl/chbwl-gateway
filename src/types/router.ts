@@ -17,7 +17,7 @@ export interface RouteMeta {
 }
 
 // 扩展路由记录类型
-export interface AppRouteRecordRaw extends Omit<RouteRecordRaw, 'meta'> {
+export interface AppRouteRecordRaw extends Omit<RouteRecordRaw, 'meta' | 'children'> {
   meta?: RouteMeta
   children?: AppRouteRecordRaw[]
 }
