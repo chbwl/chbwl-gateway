@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="32" height="32">
+  <!-- 背景圆形 -->
+  <circle cx="50" cy="50" r="45" fill="#667eea" stroke="#764ba2" stroke-width="2"/>
+  
+  <!-- 网关/门户图标 -->
+  <rect x="30" y="25" width="40" height="50" rx="4" fill="none" stroke="white" stroke-width="3"/>
+  
+  <!-- 门框 -->
+  <rect x="35" y="30" width="30" height="40" fill="none" stroke="white" stroke-width="2"/>
+  
+  <!-- 门把手 -->
+  <circle cx="55" cy="50" r="2" fill="white"/>
+  
+  <!-- 装饰线条 -->
+  <line x1="40" y1="40" x2="60" y2="40" stroke="white" stroke-width="1" opacity="0.7"/>
+  <line x1="40" y1="60" x2="60" y2="60" stroke="white" stroke-width="1" opacity="0.7"/>
+  
+  <!-- 顶部装饰 -->
+  <rect x="40" y="20" width="20" height="5" fill="white" opacity="0.8"/>
+</svg> 

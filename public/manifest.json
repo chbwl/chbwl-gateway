@@ -1,0 +1,16 @@
+{
+  "name": "CHBWL Gateway",
+  "short_name": "CHBWL",
+  "description": "现代化Vue 3门户系统",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#667eea",
+  "theme_color": "#667eea",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+} 

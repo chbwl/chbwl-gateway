@@ -1,7 +1,50 @@
-// 全局变量和混合器
-@use './variables.scss' as *;
-@use './mixins.scss' as *;
+// 全局样式
+* {
+  box-sizing: border-box;
+}
 
-// 导出所有变量和混合器到全局作用域
-@forward './variables.scss';
-@forward './mixins.scss'; 
+html {
+  font-size: var(--font-size, 16px);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-family-base, 'Arial', sans-serif);
+  background-color: var(--bg-color, #ffffff);
+  color: var(--text-color, #333333);
+  line-height: 1.6;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+// 主题相关样式
+.theme-light {
+  --bg-color: #ffffff;
+  --text-color: #333333;
+  --border-color: #e0e0e0;
+}
+
+.theme-dark {
+  --bg-color: #1a1a1a;
+  --text-color: #ffffff;
+  --border-color: #333333;
+}
+
+// 滚动条样式
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--border-color);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--primary-color);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--secondary-color);
+} 

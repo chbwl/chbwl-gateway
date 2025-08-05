@@ -8,7 +8,7 @@ declare module '*.vue' {
 
 // 路径别名类型声明
 declare module '@/stores' {
-  export { useCounterStore } from './stores/counter'
+  export { useCounterStore } from '../stores/counter'
 }
 
 declare module '@/stores/*' {
