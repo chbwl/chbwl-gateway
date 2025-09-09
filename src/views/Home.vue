@@ -10,7 +10,7 @@
       <div class="container">
         <div class="content-grid">
           <!-- 特色功能 -->
-          <!-- <div class="feature-section">
+          <div class="feature-section">
             <h2 class="section-title">核心功能</h2>
             <div class="features-grid">
               <div class="feature-card" v-for="feature in features" :key="feature.id">
@@ -21,10 +21,10 @@
                 <p class="feature-description">{{ feature.description }}</p>
               </div>
             </div>
-          </div> -->
+          </div>
           
           <!-- 统计数据 -->
-          <!-- <div class="stats-section">
+          <div class="stats-section">
             <h2 class="section-title">平台数据</h2>
             <div class="stats-grid">
               <div class="stat-item" v-for="stat in stats" :key="stat.id">
@@ -32,7 +32,7 @@
                 <div class="stat-label">{{ stat.label }}</div>
               </div>
             </div>
-          </div> -->
+          </div>
         </div>
       </div>
     </section>
