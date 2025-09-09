@@ -43,7 +43,7 @@ importers:
         specifier: ^4.17.20
         version: 4.17.20
       '@types/node':
-        specifier: ^22.0.0
+        specifier: 22.18.1
         version: 22.18.1
       '@typescript-eslint/eslint-plugin':
         specifier: ^8.0.0
