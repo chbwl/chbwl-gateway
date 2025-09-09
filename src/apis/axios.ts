@@ -115,5 +115,3 @@ export const request = {
     return http.patch(url, data, config)
   }
 }
-
-export default http 
