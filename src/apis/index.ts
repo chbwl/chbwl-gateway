@@ -1,5 +1,5 @@
 // 导出HTTP客户端
-export { default as http, request } from './http'
+export { request } from './axios'
 
 // 导出具体API模块
 export { uploadApi } from './upload'

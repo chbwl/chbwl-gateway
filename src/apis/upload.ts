@@ -1,4 +1,4 @@
-import { request } from './http'
+import { request } from './axios'
 import type { UploadResponse } from '@/types'
 import type { AxiosProgressEvent } from 'axios'
 
