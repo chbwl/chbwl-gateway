@@ -40,7 +40,8 @@
       "@assets/*": ["src/assets/*"],
       "@styles/*": ["src/styles/*"],
       "@apis/*": ["src/apis/*"],
-      "@config/*": ["src/config/*"]
+      "@config/*": ["src/config/*"],
+      "@constants/*": ["src/constants/*"]
     }
   },
   "include": [

@@ -25,12 +25,18 @@ body {
   --bg-color: #ffffff;
   --text-color: #333333;
   --border-color: #e0e0e0;
+  --primary-color: #667eea;
+  --secondary-color: #764ba2;
+  --primary-color-rgb: 102, 126, 234;
 }
 
 .theme-dark {
   --bg-color: #1a1a1a;
   --text-color: #ffffff;
   --border-color: #333333;
+  --primary-color: #667eea;
+  --secondary-color: #764ba2;
+  --primary-color-rgb: 102, 126, 234;
 }
 
 // 滚动条样式
@@ -44,12 +50,12 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: var(--primary-color);
+  background: #333333;
   border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--secondary-color);
+  background: #000000;
 }
 
 // 触摸优化

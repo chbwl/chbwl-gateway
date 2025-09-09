@@ -9,3 +9,6 @@ export * from './router'
 
 // 状态管理相关类型
 export * from './store'
+
+// 轮播图相关类型
+export * from './banner'

@@ -55,7 +55,8 @@ export default defineConfig({
       '@assets': resolve(__dirname, 'src/assets'),
       '@styles': resolve(__dirname, 'src/styles'),
       '@apis': resolve(__dirname, 'src/apis'),
-      '@config': resolve(__dirname, 'src/config')
+      '@config': resolve(__dirname, 'src/config'),
+      '@constants': resolve(__dirname, 'src/constants')
     }
   },
   css: {

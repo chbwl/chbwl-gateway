@@ -15,6 +15,22 @@ const routes: RouteRecordRaw[] = [
     }
   },
   {
+    path: '/contact',
+    name: 'Contact',
+    component: () => import('@/views/Contact.vue'),
+    meta: {
+      title: '联系我们'
+    }
+  },
+  {
+    path: '/image/:id',
+    name: 'ImageDetail',
+    component: () => import('@/views/ImageDetail.vue'),
+    meta: {
+      title: '图片详情'
+    }
+  },
+  {
     path: '/403',
     name: 'Forbidden',
     component: () => import('@/views/403.vue'),
