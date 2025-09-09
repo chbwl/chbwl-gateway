@@ -1,5 +1,4 @@
 /* eslint-env node */
-require('@rushstack/eslint-patch/modern-module-resolution')
 
 module.exports = {
   root: true,
@@ -30,7 +29,7 @@ module.exports = {
     
     // TypeScript 规则
     '@typescript-eslint/no-unused-vars': 'error',
-    '@typescript-eslint/no-explicit-any': 'warn',
+    '@typescript-eslint/no-explicit-any': 'error',
     '@typescript-eslint/explicit-function-return-type': 'off',
     '@typescript-eslint/explicit-module-boundary-types': 'off',
     '@typescript-eslint/no-non-null-assertion': 'warn',

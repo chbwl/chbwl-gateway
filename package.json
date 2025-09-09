@@ -11,13 +11,7 @@
     "reinstall": "pnpm clean && pnpm install",
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore",
     "lint:check": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --ignore-path .gitignore",
-    "format": "prettier --write src/",
-    "format:check": "prettier --check src/",
-    "type-check": "vue-tsc --noEmit",
-    "restart": "rm -f src/components.d.ts src/auto-imports.d.ts && pnpm dev",
-    "deploy": "./scripts/deploy.sh",
-    "deploy:prod": "./scripts/deploy.sh production",
-    "deploy:preview": "./scripts/deploy.sh preview"
+    "type-check": "vue-tsc --noEmit"
   },
   "dependencies": {
     "@element-plus/icons-vue": "^2.3.1",
@@ -51,51 +45,5 @@
     "vite-plugin-pages": "^0.32.0",
     "vite-plugin-vue-layouts": "^0.8.0",
     "vue-tsc": "^2.0.0"
-  },
-  "vercel": {
-    "buildCommand": "pnpm build",
-    "outputDirectory": "dist",
-    "framework": "vite",
-    "installCommand": "pnpm install",
-    "devCommand": "pnpm dev",
-    "rewrites": [
-      {
-        "source": "/(.*)",
-        "destination": "/index.html"
-      }
-    ],
-    "headers": [
-      {
-        "source": "/assets/(.*)",
-        "headers": [
-          {
-            "key": "Cache-Control",
-            "value": "public, max-age=31536000, immutable"
-          }
-        ]
-      },
-      {
-        "source": "/(.*)",
-        "headers": [
-          {
-            "key": "X-Content-Type-Options",
-            "value": "nosniff"
-          },
-          {
-            "key": "X-Frame-Options",
-            "value": "DENY"
-          },
-          {
-            "key": "X-XSS-Protection",
-            "value": "1; mode=block"
-          }
-        ]
-      }
-    ],
-    "functions": {
-      "app/api/**/*.js": {
-        "runtime": "nodejs18.x"
-      }
-    }
   }
 }
